@@ -32,6 +32,7 @@ modules:
         - toolbox
         - gnome-tour
         - yelp
+        - malcontent-control # Parental Controls UI frontend
 
   - type: default-flatpaks
     configurations:
