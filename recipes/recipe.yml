@@ -34,11 +34,6 @@ modules:
         - yelp
         - malcontent-control # Parental Controls UI frontend
 
-  - type: default-flatpaks
-    configurations:
-      - notify: false # Send notification after install/uninstall is finished (true/false)
-        scope: user
-
   - type: fonts
     fonts:
       nerd-fonts:
