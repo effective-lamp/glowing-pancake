@@ -17,22 +17,24 @@ modules:
       cleanup: true
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+        - vscode.repo
+      keys:
+        - https://packages.microsoft.com/keys/microsoft.asc
     install:
       install-weak-deps: false
       packages:
+        - code
         - distrobox
+        - tailscale
         - zsh
-        - repo: tailscale-stable
-          packages:
-            - tailscale
     remove:
       packages:
         - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-        - toolbox
+        - firefox-langpacks
         - gnome-tour
-        - yelp
         - malcontent-control # Parental Controls UI frontend
+        - toolbox
+        - yelp
 
   - type: fonts
     fonts:
