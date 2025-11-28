@@ -38,7 +38,8 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - scope: user
+      - notify: false
+        scope: user
         install:
           - com.brave.Browser
           - com.github.tchx84.Flatseal
