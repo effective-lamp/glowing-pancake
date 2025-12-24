@@ -44,6 +44,7 @@ modules:
           - com.brave.Browser
           - com.github.tchx84.Flatseal
           - com.mattjakeman.ExtensionManager
+          - com.github.rafostar.Clapper
           - com.ranfdev.DistroShelf
           - com.rustdesk.RustDesk
           - com.spotify.Client
